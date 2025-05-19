@@ -11,9 +11,10 @@ int main()
 
   /* VARS */
   int rolls[100];
-  int roll_count = sizeof(rolls) / sizeof(rolls[0]); // note: can only be defined in same scope as array, cannot be passed
   int die_size = 6;
   
+  int roll_count = sizeof(rolls) / sizeof(rolls[0]); 
+
   /* ROLL DICE */
   for (int i = 0; i < roll_count; i++) {
     int dice_roll = (rand() % die_size) + 1;
